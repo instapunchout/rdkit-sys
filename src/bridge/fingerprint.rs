@@ -15,5 +15,7 @@ pub mod ffi {
         pub fn explicit_bit_vect_to_u64_vec(
             bitvect: SharedPtr<ExplicitBitVect>,
         ) -> UniquePtr<CxxVector<u64>>;
+
+        pub fn maccs(mol: SharedPtr<ROMol>) -> SharedPtr<ExplicitBitVect>;
     }
 }

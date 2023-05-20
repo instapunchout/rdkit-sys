@@ -9,4 +9,5 @@ namespace RDKit {
     unsigned int get_num_on_bits(std::shared_ptr<ExplicitBitVect> bitvect);
 
     std::unique_ptr<std::vector<uint64_t>> explicit_bit_vect_to_u64_vec(std::shared_ptr<ExplicitBitVect> bitvect);
+    std::shared_ptr<ExplicitBitVect> maccs(std::shared_ptr<ROMol> mol);
 }
