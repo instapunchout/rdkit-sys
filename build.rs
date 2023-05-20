@@ -135,7 +135,7 @@ fn main() {
         "Subgraphs",
         "SubstructMatch",
         "MolDraw2D",
-        "CoordGen",
+        // "CoordGen",
     ] {
         println!("cargo:rustc-link-lib=dylib=RDKit{}", lib);
     }
