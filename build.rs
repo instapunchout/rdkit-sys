@@ -115,25 +115,27 @@ fn main() {
     // println!("cargo:rustc-link-lib=static=c++");
 
     for lib in &[
-        // "Catalogs",
-        // "ChemReactions",
-        // "ChemTransforms",
+        "Catalogs",
+        "ChemReactions",
+        "ChemTransforms",
         "DataStructs",
-        // "Depictor",
+        "Depictor",
         "Descriptors",
         "FileParsers",
         "Fingerprints",
-        // "GenericGroups",
+        "GenericGroups",
         "GraphMol",
         "MolStandardize",
-        // "MolTransforms",
+        "MolTransforms",
         // "PartialCharges",
         "RDGeneral",
-        // "RDGeometryLib",
-        // "RingDecomposerLib",
+        "RDGeometryLib",
+        "RingDecomposerLib",
         "SmilesParse",
-        // "Subgraphs",
+        "Subgraphs",
         "SubstructMatch",
+        "MolDraw2D",
+        "CoordGen",
     ] {
         println!("cargo:rustc-link-lib=dylib=RDKit{}", lib);
     }
